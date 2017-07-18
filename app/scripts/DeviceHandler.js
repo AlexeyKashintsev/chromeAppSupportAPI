@@ -22,7 +22,7 @@ define(function(require){
 
         this.setOptions = function(aSettings){
             var anAlias = aSettings.alias;
-            if (this.devices[anAlias] && this.devices[anAlias].options){
+            if (this.devices[anAlias] && this.devices[anAlias].options) {
                 if (aSettings.bitrate && aSettings.bitrate != "default") this.devices[anAlias].options.bitrate = +aSettings.bitrate;
                 if (aSettings.bufferSize && aSettings.bufferSize != "default") this.devices[anAlias].options.bufferSize = +aSettings.bufferSize;
                 if (aSettings.dataBits && aSettings.dataBits != "default") this.devices[anAlias].options.dataBits = aSettings.dataBits;
